@@ -1,13 +1,18 @@
 import React from 'react';
 import Alumno from './components/Alumno';
 import Nav from './components/layout/Nav';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import Aside from './components/layout/Aside';
 
 // JSX
+
 
 const App = () => {
 
   return (
     <div>
+      <Header />
       <Nav/>
       <Alumno 
         nombre='Franco' 
@@ -24,6 +29,10 @@ const App = () => {
         edad={28}
         hobbies = {['Guitarra', ' Coding 😆']}
       />
+
+      <Aside/>
+
+      <Footer/>
     </div>
   );
 }
